@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CEP Autocomplete</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="jumbotron">
+    <h1 class="display-4">CEP Autocomplete</h1>
+    <p class="lead">Simples aplicação de autocomplete de endereço, você preenche o CEP, o endereço completo é exibido.</p>
+    <hr class="my-4">
+    <p>Tecnologias usadas: Bootstrap + Javascript Puro</p>
+    </div>
+
+
+    <div class="container">
+    <div class="col-md-8">
+
+    <form id="cepForm">
+    <div class="form-group">
+        <label>CEP</label>
+        <input type="text" class="form-control cep" placeholder="00000000">
+    </div>
+    <div class="form-group">
+            <label>LOGRADOURO</label>
+            <input type="text" class="form-control logradouro">
+    </div>
+    <div class="form-group">
+            <label>COMPLEMENTO</label>
+            <input type="text" class="form-control complemento">
+    </div>
+    <div class="form-group">
+            <label>BAIRRO</label>
+            <input type="text" class="form-control bairro">
+    </div>
+    <div class="form-group">
+            <label>CIDADE</label>
+            <input type="text" class="form-control cidade">
+    </div>
+    <div class="form-group">
+            <label>ESTADO</label>
+            <input type="text" class="form-control estado">
+    </div>
+    <!--
+    <button type="submit" class="btn btn-primary enviar">Buscar</button>
+    -->
+    <button type="submit" class="btn btn-secondary limpar">Limpar</button>
+    </form>
+
+    </div>
+    </div>
+
+    <footer style="margin-top: 30px;">
+    <div class="card">
+            <div class="card-body">
+              2018 - Projeto de código aberto
+            </div>
+    </div>
+    </footer>
+
+    <script src="js/correios.js"></script>
+</body>
+</html>
